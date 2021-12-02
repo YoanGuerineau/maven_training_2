@@ -2,19 +2,20 @@ package fr.lernejo.tester.internal;
 
 import fr.lernejo.tester.api.TestMethod;
 
-import java.lang.reflect.Method;
 import java.util.List;
 
 public class TestClassDiscovererLernejoTests {
 
-    private static final String myTestPackage = "fr.lernejo.tester";
-
     @TestMethod
-    public static void main(String[] args) {
+    public static void testSomeLernejoTestsClassDiscoverer() {
+        String myTestPackage = "fr.lernejo.tester";
         TestClassDiscoverer myTestClassDiscoverer = new TestClassDiscoverer( myTestPackage );
         List<TestClassDescription> myTestClassDescriptionList = myTestClassDiscoverer.listTestClasses();
-        myTestClassDescriptionList.forEach( tcd -> {
+            myTestClassDescriptionList.forEach( tcd -> {
             System.out.println("Found class: " + tcd.getTestClass().getName() );
         });
+    }
+    public static void main(String[] args) {
+        testSomeLernejoTestsClassDiscoverer();
     }
 }

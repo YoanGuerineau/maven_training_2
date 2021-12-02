@@ -7,12 +7,16 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 public class TestClassDescriptionLernejoTests {
-    private static final TestClassDescription myTestClassDescription = new TestClassDescription(SomeLernejoTests.class);
 
     @TestMethod
-    public static void main(String[] args) {
+    public static void testSomeLernejoTestsClassDescription() {
+        TestClassDescription myTestClassDescription = new TestClassDescription(SomeLernejoTests.class);
         List<Method> myTestMethodList = myTestClassDescription.listTestMethods();
         myTestMethodList.forEach(System.out::println);
+    }
+
+    public static void main(String[] args) {
+        testSomeLernejoTestsClassDescription();
     }
 
 }

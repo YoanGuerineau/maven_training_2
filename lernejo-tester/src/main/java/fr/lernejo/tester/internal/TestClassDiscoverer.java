@@ -4,7 +4,6 @@ import fr.lernejo.tester.api.TestMethod;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.*;
 

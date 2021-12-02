@@ -30,7 +30,7 @@ public class TestRunner {
                 classMethods.forEach(
                     method -> {
                         long start = System.currentTimeMillis();
-                        System.out.print( method.getName() + " " );
+                        System.out.print( method + " " );
                         try {
                             method.invoke( finalTestInstance );
                             System.out.print( "OK " );
@@ -47,7 +47,6 @@ public class TestRunner {
                 long endClassTest = System.currentTimeMillis();
                 System.out.println("Tests launched: " + (successCount.addAndGet(failCount.get())) + " | Tests failed: " + failCount.get() + " | Total tests duration: " + (endClassTest - startClassTest) + " ms");
             });
-
         }
     }
 }
