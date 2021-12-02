@@ -14,7 +14,7 @@ public class TestClassDiscovererLernejoTests {
         TestClassDiscoverer myTestClassDiscoverer = new TestClassDiscoverer( myTestPackage );
         List<TestClassDescription> myTestClassDescriptionList = myTestClassDiscoverer.listTestClasses();
         myTestClassDescriptionList.forEach( tcd -> {
-            System.out.println("Found class: " + tcd.testClass.getName() );
+            System.out.println("Found class: " + tcd.getTestClass().getName() );
         });
     }
 }

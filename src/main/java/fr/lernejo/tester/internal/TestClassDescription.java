@@ -9,10 +9,14 @@ import java.util.List;
 
 public class TestClassDescription {
 
-    Class<?> testClass;
+    private Class<?> testClass;
 
     public TestClassDescription( Class<?> targetClass ) {
         testClass = targetClass;
+    }
+
+    public Class<?> getTestClass() {
+        return this.testClass;
     }
 
     public List<Method> listTestMethods() {
