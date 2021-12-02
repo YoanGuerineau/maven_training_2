@@ -37,7 +37,9 @@
                         </goals>
                         <configuration>
                             <mainClass>fr.lernejo.tester.TestRunner</mainClass>
-                            <arguments>fr.lernejo</arguments>
+                            <arguments>
+                                <argument>fr.lernejo</argument>
+                            </arguments>
                             <classpathScope>test</classpathScope>
                         </configuration>
                     </execution>

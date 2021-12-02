@@ -15,8 +15,4 @@ public class TestClassDescriptionLernejoTests {
         myTestMethodList.forEach(System.out::println);
     }
 
-    public static void main(String[] args) {
-        testSomeLernejoTestsClassDescription();
-    }
-
 }

@@ -15,7 +15,5 @@ public class TestClassDiscovererLernejoTests {
             System.out.println("Found class: " + tcd.getTestClass().getName() );
         });
     }
-    public static void main(String[] args) {
-        testSomeLernejoTestsClassDiscoverer();
-    }
+
 }
