@@ -16,6 +16,6 @@ public class TestClassDescription {
     }
 
     public List<Method> listTestMethods() {
-        return Arrays.stream(this.testClass.getDeclaredMethods()).filter(m -> Modifier.isPublic(m.getModifiers())&& m.getReturnType().getName().equals("void") && m.getParameterCount() <= 0 && m.isAnnotationPresent(TestMethod.class)).toList();
+        return Arrays.stream(this.testClass.getDeclaredMethods()).filter(m -> Modifier.isPublic(m.getModifiers()) && m.getReturnType().getName().equals("void") && m.getParameterCount() <= 0 && m.isAnnotationPresent(TestMethod.class)).toList();
     }
 }
